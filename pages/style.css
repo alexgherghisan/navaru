@@ -1,0 +1,26 @@
+.layout {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+.container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 500%;
+	height: 500%;
+	transform-origin: 0 0;
+}
+.left {
+	composes: container;
+	background-color: red;
+	z-index: 10;
+}
+.right {
+	composes: container;
+	background-color: green;
+	top: -100%;
+}
