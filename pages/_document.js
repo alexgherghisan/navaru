@@ -24,6 +24,14 @@ export default class MyDocument extends Document {
 						*, *:before, *:after {
 							box-sizing: inherit;
 						}
+						b {
+							display: block;
+							font-weight: normal;
+						}
+						i {
+							display: inline-block;
+							font-style: normal;
+						}
 					`}</style>
 
 					<link
