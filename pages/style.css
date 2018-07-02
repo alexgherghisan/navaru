@@ -10,17 +10,50 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	width: 500%;
-	height: 500%;
+	width: 100vw;
+	height: 100vh;
 	transform-origin: 0 0;
+	background-color: #000;
+}
+.gradient {
+	transform-origin: top left;
+	background: linear-gradient(#ec547b, #2b2b2b);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
 }
 .left {
 	composes: container;
 	background-color: red;
 	z-index: 10;
+	width: 500vw;
+	height: 500vh;
+	background: linear-gradient(
+		#2b2b2b,
+		#ec547b,
+		#2b2b2b,
+		#ec547b,
+		#2b2b2b,
+		#ec547b
+	);
 }
 .right {
 	composes: container;
-	background-color: green;
-	top: -100%;
+}
+.text {
+	position: absolute;
+	top: 50vh;
+}
+.textleft {
+	composes: text;
+	left: 10vw;
+}
+.textright {
+	composes: text;
+	left: 80vw;
 }

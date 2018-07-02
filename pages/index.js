@@ -6,9 +6,13 @@ class Page extends Component {
 		angle: 0,
 		width: 0,
 		height: 0,
+		data: null,
 	};
 
 	componentDidMount() {
+		fetch("/static/data/home.json")
+			.then(reply => reply.json())
+			.then(data => this.setState({ data: data }));
 		this.calcAngle();
 		window.addEventListener("resize", () => this.calcAngle());
 	}
@@ -33,7 +37,9 @@ class Page extends Component {
 	}
 
 	render() {
-		const { angle, width, height } = this.state;
+		const { angle, width, height, data } = this.state;
+
+		console.log(data);
 
 		return (
 			<b className={$.layout}>
@@ -47,10 +53,12 @@ class Page extends Component {
 				<b
 					className={$.right}
 					style={{
-						transform: `rotate(${angle}rad)`,
+						background: `linear-gradient(${angle}rad, #86c232, #2b2b2b, #86c232)`,
 					}}
 					onClick={() => this.clickRight()}
 				/>
+				<b className={$.textleft}>vnihrsdkhj</b>
+				<b className={$.textright}>vnihrsdkhj</b>
 			</b>
 		);
 	}

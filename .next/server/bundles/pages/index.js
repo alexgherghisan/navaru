@@ -138,7 +138,8 @@ function (_Component) {
       value: {
         angle: 0,
         width: 0,
-        height: 0
+        height: 0,
+        data: null
       }
     }), _temp));
   }
@@ -148,6 +149,13 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
+      fetch("/static/data/home.json").then(function (reply) {
+        return reply.json();
+      }).then(function (data) {
+        return _this2.setState({
+          data: data
+        });
+      });
       this.calcAngle();
       window.addEventListener("resize", function () {
         return _this2.calcAngle();
@@ -182,7 +190,9 @@ function (_Component) {
       var _state = this.state,
           angle = _state.angle,
           width = _state.width,
-          height = _state.height;
+          height = _state.height,
+          data = _state.data;
+      console.log(data);
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", {
         className: __WEBPACK_IMPORTED_MODULE_1__style_css___default.a.layout
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", {
@@ -196,12 +206,16 @@ function (_Component) {
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", {
         className: __WEBPACK_IMPORTED_MODULE_1__style_css___default.a.right,
         style: {
-          transform: "rotate(".concat(angle, "rad)")
+          background: "linear-gradient(".concat(angle, "rad, #86c232, #2b2b2b, #86c232)")
         },
         onClick: function onClick() {
           return _this3.clickRight();
         }
-      }));
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", {
+        className: __WEBPACK_IMPORTED_MODULE_1__style_css___default.a.textleft
+      }, "vnihrsdkhj"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", {
+        className: __WEBPACK_IMPORTED_MODULE_1__style_css___default.a.textright
+      }, "vnihrsdkhj"));
     }
   }]);
 
@@ -217,8 +231,12 @@ function (_Component) {
 module.exports = {
 	"layout": "layout_1bhwo",
 	"container": "container_37FNP",
+	"gradient": "gradient_1vtZf",
 	"left": "left_2kYut container_37FNP",
-	"right": "right_2kU9g container_37FNP"
+	"right": "right_2kU9g container_37FNP",
+	"text": "text_xcSH5",
+	"textleft": "textleft_h_5H1 text_xcSH5",
+	"textright": "textright__CBqe text_xcSH5"
 };
 
 /***/ })
