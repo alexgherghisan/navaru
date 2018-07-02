@@ -129,5 +129,10 @@
 		},
 		"description":
 			"Before launching a page you need to translate its design into web technologies. Basically, starting from an image, you have to develop specific source code, the language that web browsers use and frontend developers understand. No matter how good the design is, a poorly implemented code will cancel the initial advantages.<br/> We have the know-how needed to properly develop web projects."
+	},
+	"contactSection": {
+		"heading": "Contact us",
+		"description":
+			"We debrief all of your wishes and get back to you with a complete and thought out proposal. Once there's common approval on the proposal we will send you a quotation and provide a scrum schedule that keeps the project manageable."
 	}
 }
