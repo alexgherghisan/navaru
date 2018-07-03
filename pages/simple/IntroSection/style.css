@@ -1,0 +1,17 @@
+.container {
+	composes: background from "../defaults.css";
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.block {
+	composes: block from "../defaults.css";
+}
+.heading {
+	composes: heading from "../defaults.css";
+	max-width: 50%;
+	min-width: 27.5rem;
+	margin-left: auto;
+	margin-right: 0;
+}

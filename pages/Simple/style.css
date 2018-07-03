@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:700");
+.container {
+	composes: root from "./defaults.css";
+	position: relative;
+	background: var(--background_primary);
+}
+.logo {
+	position: fixed;
+	top: 2rem;
+	left: 2rem;
+	width: 5rem;
+	z-index: 20;
+}
+.intro_section {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: row;
+	min-height: 22.5rem;
+	overflow: hidden;
+}

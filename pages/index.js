@@ -1,12 +1,9 @@
 import { Component } from "react";
-import Simple from "./Simple";
+// import Simple from "./Simple";
 import $ from "./style.css";
 
 class Page extends Component {
 	state = {
-		angle: 0,
-		width: 0,
-		height: 0,
 		data: null,
 		isSimpleVisible: false,
 		isComplexVisible: false,
@@ -17,20 +14,6 @@ class Page extends Component {
 		fetch("/static/data/home.json")
 			.then(reply => reply.json())
 			.then(data => this.setState({ data: data }));
-		this.calcAngle();
-		window.addEventListener("resize", () => this.calcAngle());
-	}
-
-	calcAngle() {
-		const width = window.innerWidth;
-		const height = window.innerHeight;
-		const angle = Math.atan(height / width); // in radians
-
-		this.setState({
-			angle: angle,
-			width: width,
-			height: height,
-		});
 	}
 
 	clickLeft() {
@@ -83,34 +66,9 @@ class Page extends Component {
 	}
 
 	render() {
-		const {
-			angle,
-			width,
-			height,
-			data,
-			isSimpleVisible,
-			isComplexVisible,
-		} = this.state;
+		const { data, isSimpleVisible, isComplexVisible } = this.state;
 
 		return (
-			/*<b className={$.layout}>
-				<b
-					className={$.left}
-					style={{
-						transform: `rotate(${angle}rad)`,
-					}}
-					onClick={() => this.clickLeft()}
-				/>
-				<b
-					className={$.right}
-					style={{
-						background: `linear-gradient(${angle}rad, #86c232, #2b2b2b, #86c232)`,
-					}}
-					onClick={() => this.clickRight()}
-				/>
-				<b className={$.textleft}>vnihrsdkhj</b>
-				<b className={$.textright}>vnihrsdkhj</b>
-			</b>*/
 			<b className={$.layout}>
 				<b className={$.container}>
 					<svg
@@ -123,16 +81,16 @@ class Page extends Component {
 							id="grad_complex"
 							gradientTransform="rotate(-45)"
 						>
-							<stop stop-color="#222629" offset="0%" />
-							<stop stop-color="#86c232" offset="60%" />
+							<stop stopColor="#222629" offset="0%" />
+							<stop stopColor="#86c232" offset="60%" />
 						</linearGradient>
 
 						<linearGradient
 							id="grad_simple"
 							gradientTransform="rotate(135)"
 						>
-							<stop stop-color="#ED7456" offset="0%" />
-							<stop stop-color="#EC547B" offset="20%" />
+							<stop stopColor="#ED7456" offset="0%" />
+							<stop stopColor="#EC547B" offset="20%" />
 						</linearGradient>
 
 						<polygon
@@ -143,7 +101,7 @@ class Page extends Component {
 						>
 							<animate
 								fill="freeze"
-								class="animate to_bottom"
+								className="animate to_bottom"
 								begin="indefinite"
 								attributeName="points"
 								dur="300ms"
@@ -151,7 +109,7 @@ class Page extends Component {
 							/>
 							<animate
 								fill="freeze"
-								class="animate_back to_bottom"
+								className="animate_back to_bottom"
 								begin="indefinite"
 								attributeName="points"
 								dur="300ms"
@@ -166,7 +124,7 @@ class Page extends Component {
 						>
 							<animate
 								fill="freeze"
-								class="animate to_top"
+								className="animate to_top"
 								begin="indefinite"
 								attributeName="points"
 								dur="300ms"
@@ -174,7 +132,7 @@ class Page extends Component {
 							/>
 							<animate
 								fill="freeze"
-								class="animate_back to_top"
+								className="animate_back to_top"
 								begin="indefinite"
 								attributeName="points"
 								dur="300ms"
@@ -187,7 +145,7 @@ class Page extends Component {
 					<b className={$.back} onClick={() => this.clickBack()}>
 						try complex one
 					</b>
-					<Simple />
+					{/*<Simple />*/}
 				</b>
 				<b className={isComplexVisible ? $.complex : $.hidden}>
 					<b className={$.back} onClick={() => this.clickBack()}>

@@ -35320,10 +35320,11 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/Simple/style.css":
+/***/ "./pages/simple/IntroSection/style.css":
 /***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin;
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_25FAw background_2h99B","block":"block_ZHGaz block_TewHb","heading":"heading_28yNe heading_Avhal"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -35345,7 +35346,75 @@ module.exports = function(module) {
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530628377140");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530651685443");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/Logo/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_1sx37"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1530651876845");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_1u7TC root_QcNiS","logo":"logo_NRG34","intro_section":"intro_section_2HlgG"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1530652251092");
           });
       }
     }
@@ -35357,7 +35426,7 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"layout":"layout_1bhwo","container":"container_37FNP","light":"light_3tzjT","dark":"dark_3q0Be","back":"back_1JNLX","hidden":"hidden_2Q-eq","simple":"simple_1zjPG hidden_2Q-eq","complex":"complex_MtXNZ hidden_2Q-eq","left":"left_2kYut container_37FNP","right":"right_2kU9g container_37FNP","text":"text_xcSH5","textleft":"textleft_h_5H1 text_xcSH5","textright":"textright__CBqe text_xcSH5"};;
+module.exports = {"layout":"layout_1bhwo","container":"container_37FNP","light":"light_3tzjT","dark":"dark_3q0Be","back":"back_1JNLX","hidden":"hidden_2Q-eq","simple":"simple_1zjPG hidden_2Q-eq","complex":"complex_MtXNZ hidden_2Q-eq"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -35379,7 +35448,7 @@ module.exports = {"layout":"layout_1bhwo","container":"container_37FNP","light":
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530628377135");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530643784014");
           });
       }
     }
