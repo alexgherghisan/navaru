@@ -16,7 +16,10 @@ export default class MyDocument extends Document {
 					<meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 					<title>Navaru</title>
-
+					<link
+						rel="stylesheet"
+						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
+					/>
 					<style>{`
 						html {
 							box-sizing: border-box;
@@ -34,10 +37,6 @@ export default class MyDocument extends Document {
 						}
 					`}</style>
 
-					<link
-						rel="stylesheet"
-						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
-					/>
 					<link rel="stylesheet" href={stylesheet} />
 
 					<script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
