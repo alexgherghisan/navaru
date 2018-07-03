@@ -16,7 +16,6 @@ export default class MyDocument extends Document {
 					<meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 					<title>Navaru</title>
-
 					<link
 						rel="stylesheet"
 						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
