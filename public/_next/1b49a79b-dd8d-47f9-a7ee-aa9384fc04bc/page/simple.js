@@ -1,1 +1,0 @@
-module.exports=__NEXT_REGISTER_PAGE("/simple",function(){return{page:webpackJsonp([3],{198:function(e,t,n){e.exports=n(199)},199:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var u=n(7),r=n.n(u);t.default=function(){return r.a.createElement("b",{className:""},"fediu")}}},[198]).default}});
