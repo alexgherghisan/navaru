@@ -11,6 +11,7 @@ const base = isProduction ? "/navaru" : "";
 const routes = {
 	"/": { page: "/" },
 	"/simple": { page: "/simple" },
+	"/complex": { page: "/complex" },
 };
 
 const config = {
