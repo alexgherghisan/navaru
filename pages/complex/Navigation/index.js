@@ -6,13 +6,12 @@ export default ({ logo }) => (
 		<i className={$.logo}>
 			<img src={logo} />
 		</i>
-		<i className={$.nav_item}>1</i>
-		<i className={$.nav_item}>2</i>
-		<i className={$.nav_item}>3</i>
-		<i className={$.nav_item}>4</i>
-		<i className={$.nav_item}>5</i>
-		<i className={$.nav_item}>6</i>
-		<i className={$.nav_item}>7</i>
-		<i className={$.nav_item}>8</i>
+		<i className={$.nav_items}>
+			<i className={$.nav_item}>About</i>
+			<i className={$.nav_item}>Services</i>
+			<i className={$.nav_item}>Clients</i>
+			<i className={$.nav_item}>Portfolio</i>
+			<i className={$.nav_item}>Contact</i>
+		</i>
 	</b>
 );

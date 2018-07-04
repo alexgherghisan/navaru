@@ -12,7 +12,7 @@
 		"complex": {
 			"heading":
 				"Early adopters. Thinkers. Doers. Problem solvers. We have COMPLEX plans. Can you handle it?",
-			"image": "/static/images/complex-about-section.jpg",
+			"image": "/static/images/complex-beginning-section.jpg",
 			"video": "/static/videos/complex-intro-section.webm"
 		}
 	},
@@ -94,7 +94,7 @@
 		"heading": "Let's start at the beginning.",
 		"image": {
 			"simple": "/static/images/simple-beginning-section.jpg",
-			"complex": "/static/images/complex-beginning-section.jpg"
+			"complex": "/static/images/complex-about-section.jpg"
 		},
 		"description":
 			"Every project is unique, but they all start with one thing in common. We want to know everything: where you started. Where you want to go next. What you value. Who your customers are and why they care about you. The only way to solve a problem is to understand it from every angle. Luckily, we’ve got a proven process to quench our insatiable curiosity."

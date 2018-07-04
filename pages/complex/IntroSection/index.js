@@ -2,7 +2,7 @@ import { Component } from "react";
 import $ from "./style.css";
 
 export default ({ heading, image, video }) => (
-	<b className={$.introSection}>
+	<b className={$.container}>
 		<b className={$.video}>
 			<video loop autoPlay>
 				<source src={video} />
