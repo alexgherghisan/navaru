@@ -23,6 +23,7 @@
 }
 .nav_item {
 	width: 9rem;
+	cursor: pointer;
 	text-align: left;
 	height: 5rem;
 	position: relative;

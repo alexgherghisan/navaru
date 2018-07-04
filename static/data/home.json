@@ -17,17 +17,16 @@
 		}
 	},
 	"aboutSection": {
-		"heading": "We create things",
-		"subheading": "About us",
+		"heading": "About us",
+		"subheading": "We create things",
 		"description":
 			"We've come to understand that websites are not just about pretty pictures, more traffic, better keywords and higher rankings on Google. Those things are important, sure, but more than anything else, websites need to produce when it comes to the bottom line.",
 		"image": {
-			"simple": "/static/images/simple-about-section.jpg",
-			"complex": "/static/images/complex-about-section.jpg"
+			"simple": "/static/images/complex-about-section.jpg",
+			"complex": "/static/images/complex-beginning-section.jpg"
 		}
 	},
 	"portfolioSection": {
-		"heading": "Demos",
 		"items": [
 			{
 				"image": "",
@@ -38,7 +37,7 @@
 	},
 	"servicesSection": {
 		"heading": "Services",
-		"image": "/static/images/complex-about-section.jpg",
+		"image": "/static/images/complex-services-section.jpg",
 		"items": [
 			{
 				"heading": "Web Development",
@@ -119,13 +118,13 @@
 			"The endless possibilities of the web is something we adopt continuously. Through a rock-solid stack of technology we provide our clients with fast, scalable products, built for the digital future."
 	},
 	"frontendSection": {
-		"heading": "Frontend development",
+		"heading": "Frontend Development",
 		"image": {
 			"simple": "/static/images/simple-frontend-section.jpg",
 			"complex": "/static/images/complex-frontend-section.jpg"
 		},
 		"description":
-			"Before launching a page you need to translate its design into web technologies. Basically, starting from an image, you have to develop specific source code, the language that web browsers use and frontend developers understand. No matter how good the design is, a poorly implemented code will cancel the initial advantages. We have the know-how needed to properly develop web projects."
+			"Before launching a page you need to translate its design into web technologies. Basically, starting from an image, you have to develop specific source code, the language that web browsers use and frontend developers understand. No matter how good the design is, a poorly implemented code will cancel the initial advantages.<br/> We have the know-how needed to properly develop web projects."
 	},
 	"contactSection": {
 		"heading": "Contact us",
