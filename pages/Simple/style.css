@@ -3,6 +3,7 @@
 	composes: root from "./defaults.css";
 	position: relative;
 	background: var(--background_primary);
+	color: var(--text);
 }
 .logo {
 	position: fixed;
@@ -18,4 +19,16 @@
 	flex-direction: row;
 	min-height: 22.5rem;
 	overflow: hidden;
+}
+.about_section {
+}
+.beginning_section {
+}
+.services_section {
+}
+.clients_section {
+}
+.web_section {
+}
+.portfolio_section {
 }

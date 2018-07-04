@@ -10,8 +10,7 @@
 }
 .heading {
 	composes: heading from "../defaults.css";
-	max-width: 50%;
-	min-width: 27.5rem;
+	width: 27.5rem;
 	margin-left: auto;
 	margin-right: 0;
 }
