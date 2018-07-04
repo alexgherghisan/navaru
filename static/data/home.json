@@ -30,8 +30,38 @@
 		"heading": "Demos",
 		"items": [
 			{
-				"image": "",
-				"heading": "",
+				"image": "/static/demos/plants.png",
+				"heading": "Plants",
+				"link": ""
+			},
+			{
+				"image": "/static/demos/architecture.png",
+				"heading": "Architecture",
+				"link": ""
+			},
+			{
+				"image": "/static/demos/calendar.png",
+				"heading": "Calendar",
+				"link": ""
+			},
+			{
+				"image": "/static/demos/books.png",
+				"heading": "Books",
+				"link": ""
+			},
+			{
+				"image": "/static/demos/structure.png",
+				"heading": "Structure components examples",
+				"link": ""
+			},
+			{
+				"image": "/static/demos/universe-facts.png",
+				"heading": "Universe facts",
+				"link": ""
+			},
+			{
+				"image": "/static/demos/react-wireframe.png",
+				"heading": "React Wireframe",
 				"link": ""
 			}
 		]
