@@ -22,11 +22,12 @@
 		"description":
 			"We've come to understand that websites are not just about pretty pictures, more traffic, better keywords and higher rankings on Google. Those things are important, sure, but more than anything else, websites need to produce when it comes to the bottom line.",
 		"image": {
-			"simple": "/static/images/complex-about-section.jpg",
+			"simple": "/static/images/simple-about-section.jpg",
 			"complex": "/static/images/complex-beginning-section.jpg"
 		}
 	},
 	"portfolioSection": {
+		"heading": "Demos",
 		"items": [
 			{
 				"image": "/static/demos/plants.png",
