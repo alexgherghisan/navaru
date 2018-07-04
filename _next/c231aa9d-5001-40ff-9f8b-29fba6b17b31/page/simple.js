@@ -1,1 +1,0 @@
-module.exports=__NEXT_REGISTER_PAGE("/simple",function(){return{page:webpackJsonp([3],{221:function(e,t,n){e.exports=n(222)},222:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var u=n(1),r=n.n(u),a=n(223),o=n.n(a);t.default=function(){return r.a.createElement("b",{className:o.a.first},"guyutyt")}}},[221]).default}});
