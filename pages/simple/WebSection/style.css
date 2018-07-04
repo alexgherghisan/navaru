@@ -35,7 +35,7 @@
 .heading {
 	composes: heading from "../defaults.css";
 	margin-top: 1rem;
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.2rem;
 	line-height: 1;
 	z-index: 10;
 }
@@ -115,6 +115,7 @@
 	}
 	.heading {
 		font-size: 3rem;
+		letter-spacing: 0.5rem;
 	}
 	.preview {
 		flex-basis: 40%;
