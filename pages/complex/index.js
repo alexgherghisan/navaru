@@ -6,6 +6,7 @@ import Navigation from "./Navigation";
 import BeginningSection from "./BeginningSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
+import ClientsSection from "./ClientsSection";
 class Complex extends Component {
 	state = {
 		data: null,
@@ -53,6 +54,13 @@ class Complex extends Component {
 						heading={data.servicesSection.heading}
 						items={data.servicesSection.items}
 						image={data.servicesSection.image}
+					/>
+				</b>
+				<b className={$.Clients_section}>
+					<ClientsSection
+						heading={data.clientsSection.heading}
+						image={data.clientsSection.image.complex}
+						description={data.clientsSection.description}
 					/>
 				</b>
 			</b>
