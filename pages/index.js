@@ -1,5 +1,4 @@
 import { Component } from "react";
-// import Simple from "./Simple";
 import $ from "./style.css";
 
 class Page extends Component {
@@ -22,10 +21,6 @@ class Page extends Component {
 			animation.beginElement();
 		}
 
-		/*Router.push({
-			pathname: "/simple",
-		});*/
-
 		this.setState({ isSimpleVisible: true, isComplexVisible: false });
 	}
 	clickRight() {
@@ -33,10 +28,6 @@ class Page extends Component {
 		for (const animation of animations) {
 			animation.beginElement();
 		}
-
-		/*Router.push({
-			pathname: "/complex",
-		});*/
 
 		this.setState({ isSimpleVisible: false, isComplexVisible: true });
 	}
@@ -77,18 +68,12 @@ class Page extends Component {
 						viewBox="0 0 100 100"
 						preserveAspectRatio="none"
 					>
-						<linearGradient
-							id="grad_complex"
-							gradientTransform="rotate(-45)"
-						>
+						<linearGradient id="grad_complex" gradientTransform="rotate(-45)">
 							<stop stopColor="#222629" offset="0%" />
 							<stop stopColor="#86c232" offset="60%" />
 						</linearGradient>
 
-						<linearGradient
-							id="grad_simple"
-							gradientTransform="rotate(135)"
-						>
+						<linearGradient id="grad_simple" gradientTransform="rotate(135)">
 							<stop stopColor="#ED7456" offset="0%" />
 							<stop stopColor="#EC547B" offset="20%" />
 						</linearGradient>
@@ -145,13 +130,11 @@ class Page extends Component {
 					<b className={$.back} onClick={() => this.clickBack()}>
 						try complex one
 					</b>
-					{/*<Simple />*/}
 				</b>
 				<b className={isComplexVisible ? $.complex : $.hidden}>
 					<b className={$.back} onClick={() => this.clickBack()}>
 						try simple one
 					</b>
-					{/*<Complex />*/}
 				</b>
 			</b>
 		);
