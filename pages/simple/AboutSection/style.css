@@ -36,7 +36,7 @@
 	composes: heading from "../defaults.css";
 	margin-top: 1rem;
 	text-transform: uppercase;
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.2rem;
 	line-height: 1;
 	z-index: 10;
 }
@@ -118,6 +118,9 @@
 		padding: 5rem 5rem 5rem 0;
 		flex-basis: 60%;
 		position: relative;
+	}
+	.heading {
+		letter-spacing: 0.5rem;
 	}
 	.preview {
 		flex-basis: 40%;

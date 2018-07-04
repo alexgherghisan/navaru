@@ -4,6 +4,8 @@ import $ from "./style.css";
 import IntroSection from "./IntroSection";
 import Navigation from "./Navigation";
 import BeginningSection from "./BeginningSection";
+import AboutSection from "./AboutSection";
+import ServicesSection from "./ServicesSection";
 class Complex extends Component {
 	state = {
 		data: null,
@@ -28,6 +30,9 @@ class Complex extends Component {
 						video={data.introSection.complex.video}
 					/>
 				</b>
+				<b className={$.navigation}>
+					<Navigation logo={data.logo.complex} />
+				</b>
 				<b className={$.beginning_section}>
 					<BeginningSection
 						heading={data.beginningSection.heading}
@@ -35,8 +40,20 @@ class Complex extends Component {
 						description={data.beginningSection.description}
 					/>
 				</b>
-				<b className={$.navigation}>
-					<Navigation logo={data.logo.complex} />
+				<b className={$.beginning_section}>
+					<AboutSection
+						heading={data.aboutSection.heading}
+						subheading={data.aboutSection.subheading}
+						image={data.aboutSection.image.complex}
+						description={data.aboutSection.description}
+					/>
+				</b>
+				<b className={$.Services_section}>
+					<ServicesSection
+						heading={data.servicesSection.heading}
+						items={data.servicesSection.items}
+						image={data.servicesSection.image}
+					/>
 				</b>
 			</b>
 		);

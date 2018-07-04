@@ -7,13 +7,18 @@
 .heading {
 	font-size: 2.3rem;
 	line-height: 1.5;
-	color: #6b6e70;
+	color: #b5b5b5;
 	font-family: "Josefin Sans", sans-serif;
 }
 .intro_section {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
+	z-index: 5;
+}
+.navigation {
+	z-index: 10;
+	position: relative;
 }
 .beginning_section {
 	position: relative;
@@ -22,7 +27,7 @@
 .subheading {
 	font-size: 1.5rem;
 	line-height: 1.5;
-	color: #6b6e70;
+	color: #b5b5b5;
 	max-width: 30rem;
 	font-family: "Open Sans", sans-serif;
 }
@@ -30,7 +35,7 @@
 	font-size: 1rem;
 	line-height: 1.5;
 	max-width: 30rem;
-	color: #6b6e70;
+	color: #b5b5b5;
 	font-family: "Open Sans", sans-serif;
 }
 
