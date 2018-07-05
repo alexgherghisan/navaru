@@ -6,6 +6,10 @@ import Navigation from "./Navigation";
 import BeginningSection from "./BeginningSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
+import ClientsSection from "./ClientsSection";
+import PortfolioSection from "./PortfolioSection";
+import WebSection from "./WebSection";
+import FrontendSection from "./FrontendSection";
 class Complex extends Component {
 	state = {
 		data: null,
@@ -53,6 +57,30 @@ class Complex extends Component {
 						heading={data.servicesSection.heading}
 						items={data.servicesSection.items}
 						image={data.servicesSection.image}
+					/>
+				</b>
+				<b className={$.Clients_section}>
+					<ClientsSection
+						heading={data.clientsSection.heading}
+						image={data.clientsSection.image.complex}
+						description={data.clientsSection.description}
+					/>
+				</b>
+				<b className={$.Portfolio_section}>
+					<PortfolioSection />
+				</b>
+				<b className={$.Web_section}>
+					<WebSection
+						heading={data.webSection.heading}
+						image={data.webSection.image.complex}
+						description={data.webSection.description}
+					/>
+				</b>
+				<b className={$.Frontend_section}>
+					<FrontendSection
+						heading={data.frontendSection.heading}
+						image={data.frontendSection.image.complex}
+						description={data.frontendSection.description}
 					/>
 				</b>
 			</b>

@@ -2,42 +2,32 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: stretch;
+	align-items: center;
 	flex-wrap: wrap;
-}
-.to_left {
-	position: relative;
-	padding: 3em;
-	display: flex;
-	flex-basis: 100%;
-	order: 2;
-}
-.to_left img {
-	max-width: 100%;
-	z-index: 1;
-	object-fit: contain;
+	flex-direction: row;
 }
 .to_right {
-	order: 1;
-	padding: 3em;
+	padding: 3em 0.3em;
 	display: flex;
 	flex-basis: 100%;
 	position: relative;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	min-height: 25rem;
+	order: 1;
 }
 .to_right img {
 	width: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
 	height: 100%;
 	object-fit: cover;
-	object-position: bottom;
+	object-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	flex-basis: 100%;
+	z-index: 1;
 }
 .separator {
 	position: relative;
@@ -59,35 +49,6 @@
 	text-align: center;
 	margin-top: 3rem;
 }
-.content {
-	display: flex;
-	flex-basis: calc(100% - 4rem);
-	flex-direction: column;
-}
-.items {
-}
-.item {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 3rem;
-}
-.item_heading {
-}
-.service {
-	display: flex;
-	max-height: 5rem;
-	flex-basis: 2rem;
-}
-.item_heading {
-	composes: subheading from "../style.css";
-	font-size: 1.5rem;
-}
-.item_subheading {
-	composes: description from "../style.css";
-}
 .overlay {
 	position: absolute;
 	top: 0;
@@ -96,32 +57,44 @@
 	bottom: 0;
 	height: 100%;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.7);
 	z-index: 2;
+}
+.to_left {
+	position: relative;
+	padding: 3em;
+	display: flex;
+	flex-basis: 100%;
+	order: 2;
 }
 .description {
 	composes: description from "../style.css";
 }
 @media (min-width: 48rem) {
-	.to_left {
-		padding: 4em;
-	}
 	.to_right {
-		padding: 4em;
+		padding: 4em 2em;
+		flex-basis: 50%;
+		order: 2;
 	}
 	.container {
-		flex-direction: row;
+		align-items: stretch;
+	}
+	.to_left {
+		padding: 4em;
+		flex-basis: 50%;
+		order: 1;
+	}
+	.heading {
 	}
 }
 @media (min-width: 64rem) {
-	.to_left {
-		padding: 10em 3em;
-		order: 1;
-		flex-basis: 50%;
-	}
 	.to_right {
 		padding: 10em 1em;
-		order: 2;
-		flex-basis: 50%;
+	}
+	.heading {
+		font-size: 3.7rem;
+	}
+	.to_left {
+		padding: 10em 3em;
 	}
 }
