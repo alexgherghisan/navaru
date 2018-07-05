@@ -6,12 +6,11 @@
 	height: 7rem;
 	width: 100%;
 	overflow-x: scroll;
-	padding: 1em;
-	box-shadow: 0 3px 30px -2px #222629;
+	padding: 1em 1em 0em 1em;
 	background: linear-gradient(to bottom, #000 10%, transparent 90%);
 }
 .logo {
-	margin-right: 3rem;
+	margin-right: 1rem;
 }
 .logo img {
 	height: 5rem;
@@ -34,7 +33,6 @@
 	composes: description from "../style.css";
 	text-transform: uppercase;
 	border-radius: 3px;
-	margin-right: 0.3rem;
 }
 @media (min-width: 64rem) {
 	.nav {
