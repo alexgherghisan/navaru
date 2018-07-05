@@ -2,9 +2,12 @@ import { Component } from "react";
 import $ from "./style.css";
 
 export default ({ heading, items, image }) => (
-	<b className={$.container}>
+	<b className={$.container} style={{ backgroundImage: `url(${image})` }}>
 		<b className={$.to_left}>
 			<i className={$.items}>
+				<b className={$.corner_top_right} />
+				<b className={$.corner_bottom_right} />
+				<b className={$.overlay} />
 				{items.map((item, key) => (
 					<i className={$.item} key={key}>
 						<i className={$.service}>
@@ -20,9 +23,6 @@ export default ({ heading, items, image }) => (
 				))}
 			</i>
 		</b>
-		<b className={$.to_right}>
-			<img src={image} />
-			<b className={$.overlay} />
-		</b>
+		<b className={$.to_right} />
 	</b>
 );

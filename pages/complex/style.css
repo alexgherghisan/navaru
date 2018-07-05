@@ -31,12 +31,58 @@
 	max-width: 30rem;
 	font-family: "Open Sans", sans-serif;
 }
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(34, 38, 41, 0.9);
+}
 .description {
 	font-size: 1rem;
 	line-height: 1.5;
 	max-width: 30rem;
 	color: #b5b5b5;
 	font-family: "Open Sans", sans-serif;
+}
+.corner_top_left {
+	border-bottom: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-right: 100px solid rgba(34, 38, 41, 0.9);
+	position: absolute;
+	left: -200px;
+	top: 0;
+	z-index: 2;
+}
+.corner_bottom_left {
+	border-top: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-right: 100px solid rgba(34, 38, 41, 0.9);
+	position: absolute;
+	left: -200px;
+	bottom: 0;
+	z-index: 2;
+}
+.corner_bottom_right {
+	border-top: 100px solid transparent;
+	border-left: 100px solid rgba(34, 38, 41, 0.9);
+	border-right: 100px solid transparent;
+	position: absolute;
+	left: 100%;
+	bottom: 0;
+	z-index: 2;
+}
+.corner_top_right {
+	border-bottom: 100px solid transparent;
+	border-left: 100px solid rgba(34, 38, 41, 0.9);
+	border-right: 100px solid transparent;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	z-index: 2;
 }
 
 @media (min-width: 48rem) {

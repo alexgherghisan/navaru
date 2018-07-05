@@ -5,6 +5,9 @@
 	align-items: center;
 	flex-direction: column;
 	padding: 3em;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 @media (min-width: 48rem) {
 	.container {
@@ -29,14 +32,7 @@
 	z-index: 1;
 }
 .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.7);
+	composes: overlay from "../style.css";
 	z-index: 2;
 }
 .heading {

@@ -5,6 +5,9 @@
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
+	background-size: cover;
+	background-position: right;
+	background-repeat: no-repeat;
 }
 .to_right {
 	padding: 3em 0.3em;
@@ -50,14 +53,7 @@
 	margin-top: 3rem;
 }
 .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.7);
+	composes: overlay from "../style.css";
 	z-index: 2;
 }
 .to_left {
@@ -69,6 +65,13 @@
 }
 .description {
 	composes: description from "../style.css";
+	z-index: 3;
+}
+.corner_top_right {
+	composes: corner_top_right from "../style.css";
+}
+.corner_bottom_right {
+	composes: corner_bottom_right from "../style.css";
 }
 @media (min-width: 48rem) {
 	.to_right {
