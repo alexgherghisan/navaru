@@ -64,8 +64,8 @@
 }
 .content {
 	display: flex;
-	flex-basis: calc(100% - 4rem);
 	flex-direction: column;
+	max-width: calc(100% - 5rem);
 }
 .items {
 }
@@ -74,7 +74,7 @@
 	flex-direction: row;
 	position: relative;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	margin-top: 3rem;
 	z-index: 3;
@@ -85,6 +85,7 @@
 	display: flex;
 	max-height: 5rem;
 	flex-basis: 2rem;
+	margin-right: 3rem;
 }
 .item_heading {
 	composes: subheading from "../style.css";
