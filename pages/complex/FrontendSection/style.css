@@ -2,18 +2,19 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
 }
 .to_left {
-	padding: 3em;
+	padding: 3em 0.3em;
 	display: flex;
 	flex-basis: 100%;
 	position: relative;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	order: 1;
 }
 .to_left img {
 	width: 100%;
@@ -64,34 +65,36 @@
 	padding: 3em;
 	display: flex;
 	flex-basis: 100%;
+	order: 2;
 }
 .description {
 	composes: description from "../style.css";
 }
 @media (min-width: 48rem) {
+	.container {
+		align-items: stretch;
+	}
 	.to_left {
-		padding: 4em;
+		padding: 2em;
 		flex-basis: 50%;
+		order: 1;
 	}
 	.to_right {
 		padding: 4em;
 		flex-basis: 50%;
-	}
-	.container {
-		align-items: stretch;
+		order: 2;
 	}
 	.heading {
 	}
 }
 @media (min-width: 64rem) {
 	.to_left {
-		padding: 10em 3em;
+		padding: 10em 1em;
+	}
+	.heading {
+		font-size: 3.7rem;
 	}
 	.to_right {
 		padding: 10em 3em;
-	}
-	.description {
-		display: flex;
-		align-items: center;
 	}
 }

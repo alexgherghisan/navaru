@@ -1,6 +1,5 @@
 .container {
 	position: relative;
-	min-height: 20rem;
 }
 .video {
 	position: relative;
@@ -22,6 +21,8 @@
 	left: 3rem;
 	right: 0;
 	bottom: 3rem;
+	right: 3rem;
+	font-size: 2rem;
 }
 .overlay {
 	position: absolute;
@@ -32,4 +33,15 @@
 	height: 100%;
 	width: 100%;
 	background: radial-gradient(transparent, #222629);
+}
+@media (min-width: 48rem) {
+	.heading {
+		right: 3rem;
+		font-size: 3.5rem;
+	}
+}
+@media (max-width: 22.5rem) {
+	.heading {
+		font-size: 1.5rem;
+	}
 }

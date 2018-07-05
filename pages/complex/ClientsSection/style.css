@@ -77,14 +77,17 @@
 		padding: 4em;
 		flex-basis: 50%;
 	}
+	.container {
+		align-items: stretch;
+	}
 	.heading {
 	}
 }
 @media (min-width: 64rem) {
 	.to_left {
-		padding: 10em;
+		padding: 10em 3em;
 	}
 	.to_right {
-		padding: 10em;
+		padding: 10em 3em;
 	}
 }
