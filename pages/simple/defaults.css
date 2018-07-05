@@ -61,6 +61,18 @@
 		),
 		radial-gradient(ellipse at right, var(--brand_primary), transparent 70%);
 }
+.gradient_top {
+	background: radial-gradient(
+			ellipse at top,
+			var(--brand_secondary),
+			transparent 70%
+		),
+		radial-gradient(
+			ellipse at bottom,
+			var(--brand_primary),
+			transparent 70%
+		);
+}
 .text_gradient {
 	color: var(--brand_primary);
 	background: linear-gradient(

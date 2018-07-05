@@ -7,7 +7,7 @@
 	"introSection": {
 		"simple": {
 			"heading": "Simple is underrated.",
-			"image": "/static/images/simple-intro-section.jpg"
+			"image": "/static/images/simple-intro-section.jpeg"
 		},
 		"complex": {
 			"heading":
@@ -133,7 +133,7 @@
 	"clientsSection": {
 		"heading": "Clients",
 		"image": {
-			"simple": "/static/images/simple-clients-section.jpg",
+			"simple": "/static/images/simple-clients-section.jpeg",
 			"complex": "/static/images/complex-clients-section.jpg"
 		},
 		"description":
@@ -142,7 +142,7 @@
 	"webSection": {
 		"heading": "Web development",
 		"image": {
-			"simple": "/static/images/simple-web-section.jpg",
+			"simple": "/static/images/simple-web-section.jpeg",
 			"complex": "/static/images/complex-web-section.jpg"
 		},
 		"description":
@@ -151,7 +151,7 @@
 	"frontendSection": {
 		"heading": "Frontend Development",
 		"image": {
-			"simple": "/static/images/simple-frontend-section.jpg",
+			"simple": "/static/images/simple-frontend-section.jpeg",
 			"complex": "/static/images/complex-frontend-section.jpg"
 		},
 		"description":

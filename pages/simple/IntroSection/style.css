@@ -4,12 +4,23 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
+	position: relative;
+}
+.gradient {
+	composes: gradient_top from "../defaults.css";
+	position: absolute;
+	width: 130%;
+	left: -80%;
+	bottom: 0;
+	right: 0;
+	top: 0;
 }
 .block {
 	composes: block from "../defaults.css";
 }
 .heading {
 	composes: heading from "../defaults.css";
+	composes: text_gradient from "../defaults.css";
 	width: 27.5rem;
 	margin-left: auto;
 	margin-right: 0;
