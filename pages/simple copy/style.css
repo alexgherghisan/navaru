@@ -6,13 +6,10 @@
 	position: relative;
 	background: var(--background_primary);
 	color: var(--text);
-<<<<<<< HEAD
 	overflow-x: hidden;
-=======
 	transition-property: transform, opacity;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
->>>>>>> 4e4d181936b805504ec636e14630fc139b979ca4
 }
 .header {
 	position: fixed;
