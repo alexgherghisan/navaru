@@ -35346,7 +35346,7 @@ module.exports = {"container":"container_nVu5w","to_left":"to_left_37Pk6","separ
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807158032");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462390");
           });
       }
     }
@@ -35380,7 +35380,7 @@ module.exports = {"container":"container_1nqLq","description":"description_FggVK
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807230839");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462382");
           });
       }
     }
@@ -35414,7 +35414,7 @@ module.exports = {"container":"container_kHfj2","to_left":"to_left_3DVqK","separ
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807158043");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462421");
           });
       }
     }
@@ -35448,7 +35448,7 @@ module.exports = {"container":"container_p8Ykt","to_left":"to_left_2SgVE","separ
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807158068");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462471");
           });
       }
     }
@@ -35482,7 +35482,7 @@ module.exports = {"container":"container_mk9fw","video":"video_1wG_Y","heading":
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807158015");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462370");
           });
       }
     }
@@ -35516,7 +35516,7 @@ module.exports = {"nav":"nav_tzjI3","logo":"logo_14Ytm","nav_items":"nav_items_1
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807158021");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462375");
           });
       }
     }
@@ -35550,7 +35550,7 @@ module.exports = {"container":"container_5_6V0","heading":"heading_FVkHA heading
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807158053");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462447");
           });
       }
     }
@@ -35584,7 +35584,7 @@ module.exports = {"container":"container_m1A0o","to_left":"to_left_iCD54","to_ri
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807621075");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462404");
           });
       }
     }
@@ -35618,7 +35618,7 @@ module.exports = {"container":"container_2cwdp","to_right":"to_right_3REHT","sep
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807158059");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462464");
           });
       }
     }
@@ -35652,347 +35652,7 @@ module.exports = {"complex":"complex_OKYR_","heading":"heading_kmvqq","intro_sec
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530807158009");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/AboutSection/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_1o9MI block_TewHb","content":"content_3K8If","box":"box_34Z49","heading":"heading_3qxcM heading_Avhal","subheading":"subheading_3vEO5 subheading_1csUY text_gradient_xePe_","description":"description_2rKcB","line":"line_3TWS2 line_2cMp3","preview":"preview_3aCcv","image":"image_14Jgu background_2h99B","gradient":"gradient_1Vm54 gradient_3mUKc"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804867025");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/BeginningSection/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_CuUhd block_TewHb","content":"content_kBN1r","heading":"heading_2gwtD heading_Avhal","description":"description_3UBYZ","line":"line_IAO4D line_2cMp3","preview":"preview_19HuY","image":"image_1gd8Y background_2h99B","gradient":"gradient_1pIZ9 gradient_3mUKc"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804867020");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/ClientsSection/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_dCOmX block_TewHb","content":"content_3uDRE","box":"box_2IqPo","heading":"heading_3egM4 heading_Avhal","subheading":"subheading_3w1Vj subheading_1csUY text_gradient_xePe_","description":"description_gPqnd","line":"line_2LAj- line_2cMp3","preview":"preview_1dtHh","image":"image_1Hfl3 background_2h99B","gradient":"gradient_2JSnz gradient_3mUKc"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804867010");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/FrontendSection/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_2yJuz block_TewHb","content":"content_3RAy1","box":"box_1Yq3z","heading":"heading_1tTbj heading_Avhal","description":"description_27lWb","line":"line_3W2vR line_2cMp3","preview":"preview_1Gv2x","image":"image_3gDxa background_2h99B","gradient":"gradient_AMJpU gradient_3mUKc"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804866996");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/IntroSection/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_25FAw background_2h99B","gradient":"gradient_3U2e7 gradient_top_35cxR","block":"block_ZHGaz block_TewHb","heading":"heading_28yNe heading_Avhal text_gradient_xePe_"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804867030");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/Logo/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_1sx37"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804867034");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/PortfolioSection/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_26sUQ block_TewHb","heading":"heading_vfiwo heading_Avhal text_gradient_xePe_","items":"items_2xXeO","item":"item_1gln2","blur":"blur_wPWru","content":"content_2OcB_","item_heading":"item_heading_3nll8 subheading_1csUY","item_subheading":"item_subheading_3RqTk"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804867006");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/ServicesSection/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_32xyN block_TewHb","heading":"heading_3Ut7N heading_Avhal text_gradient_xePe_","items":"items_2jEXC","item":"item_199_D","blur":"blur_1o_gK","content":"content_1o5Ui","item_heading":"item_heading_Wyolh subheading_1csUY","item_subheading":"item_subheading_1ppur"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804867016");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/WebSection/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_ZDLOQ block_TewHb","content":"content_1wrYG","box":"box_30CqB","heading":"heading_30vVu heading_Avhal","description":"description_2NlNj","line":"line_1h7on line_2cMp3","preview":"preview_I9wNS","image":"image_1M3K8 background_2h99B","gradient":"gradient_1KYzu gradient_3mUKc"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804867001");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/simple/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_1u7TC root_QcNiS","logo":"logo_NRG34","intro_section":"intro_section_2HlgG","about_section":"about_section_ag39x","beginning_section":"beginning_section_guulc","services_section":"services_section_1CfYa","clients_section":"clients_section_jeabj","web_section":"web_section_uAqm4","portfolio_section":"portfolio_section_1T_7L"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1530804866991");
+            injectCss(link, link.href.split("?")[0] + "?unix=1530813462356");
           });
       }
     }

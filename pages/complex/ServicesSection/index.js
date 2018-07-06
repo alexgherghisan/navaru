@@ -23,6 +23,8 @@ export default ({ heading, items, image }) => (
 				))}
 			</i>
 		</b>
-		<b className={$.to_right} />
+		<b className={$.to_right}>
+			<b className={$.heading}>{heading}</b>
+		</b>
 	</b>
 );
