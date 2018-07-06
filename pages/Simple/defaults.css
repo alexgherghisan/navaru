@@ -9,6 +9,7 @@
 	line-height: 1.4;
 	font-family: var(--font_primary);
 	font-size: 1rem;
+	color: var(--text);
 }
 .background {
 	background-position: center;

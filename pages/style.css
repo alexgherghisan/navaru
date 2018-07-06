@@ -31,7 +31,23 @@
 	height: 100%;
 }
 .back {
-	color: #fff;
+	padding: 1rem;
+	z-index: 30;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	font-weight: bold;
+}
+.back_simple {
+	composes: back;
+	color: green;
+}
+.back_complex {
+	composes: back;
+	color: #ec547b;
+	background: linear-gradient(to right, #ed7456, #ec547b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .hidden {
 	position: relative;

@@ -1,5 +1,4 @@
 import { Component } from "react";
-import { STATIC } from "~/playground.js";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 import IntroSection from "./IntroSection";
@@ -14,22 +13,11 @@ import $ from "./style.css";
 
 class Simple extends Component {
 	state = {
-		data: null,
-		isLoading: true,
-		selectedSectionRef: null,
+		selectedSectionRef: "intro",
 		isMenuOpened: false,
 	};
 
 	componentDidMount() {
-		fetch(`${STATIC}/data/home.json`)
-			.then(response => response.json())
-			.then(response => {
-				this.setState({
-					data: response,
-					isLoading: false,
-					selectedSectionRef: "intro",
-				});
-			});
 		window.addEventListener("resize", () => this.getWindowWidth());
 	}
 
@@ -54,7 +42,8 @@ class Simple extends Component {
 	}
 
 	render() {
-		const { data, isLoading, isMenuOpened } = this.state;
+		const { data, onClickBack } = this.props;
+		const { isMenuOpened } = this.state;
 
 		const styleMenuOpened = {
 			transform: "translateX(-15rem)",
@@ -68,7 +57,10 @@ class Simple extends Component {
 			opacity: 1,
 		};
 
-		return isLoading ? null : (
+		const onClickLogo =
+			typeof onClickBack === "function" ? () => onClickBack() : null;
+
+		return (
 			<b className={$.application}>
 				<b className={$.header}>
 					<i
@@ -78,6 +70,7 @@ class Simple extends Component {
 								isMenuOpened ? -15 : 0
 							}rem)`,
 						}}
+						onClick={onClickLogo}
 					>
 						<Logo image={data.logo.simple} />
 					</i>
