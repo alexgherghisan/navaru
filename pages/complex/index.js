@@ -38,7 +38,7 @@ class Complex extends Component {
 					/>
 				</b>
 				<b className={$.navigation}>
-					<Navigation logo={data.logo.complex} />
+					<Navigation onSelect={ref => this.handleScroll(ref)} />
 				</b>
 				<b className={$.beginning_section}>
 					<BeginningSection

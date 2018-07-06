@@ -9,30 +9,52 @@
 	padding: 1em 1em 0em 1em;
 	background: linear-gradient(to bottom, #000 10%, transparent 90%);
 }
-.logo {
-	margin-right: 1rem;
-}
-.logo img {
-	height: 5rem;
-}
 .nav_items {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.nav_item {
+.nav_item,
+.nav_item_active,
+.nav_item_hover {
 	width: 9rem;
 	cursor: pointer;
 	text-align: left;
 	height: 5rem;
 	position: relative;
-	box-shadow: rgba(134, 194, 98, 0.2) -5px 2px 5px;
+	box-shadow: rgba(0, 0, 0, 0.7) -5px 2px 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	composes: description from "../style.css";
-	text-transform: uppercase;
 	border-radius: 3px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.text {
+	position: relative;
+	text-transform: uppercase;
+	z-index: 2;
+	composes: description from "../style.css";
+}
+.index {
+	position: absolute;
+	composes: description from "../style.css";
+	top: -1.7rem;
+	left: 1rem;
+	color: transparent;
+	z-index: 1;
+	font-size: 4rem;
+	text-shadow: 0 0 5px rgba(134, 194, 50, 0.7);
+	transition: text-shadow 0.3s ease-in-out;
+}
+.nav_item_active .index {
+	text-shadow: 0 0 2px rgba(134, 194, 50, 0.8);
+	transition: text-shadow 0.3s ease-in-out;
+}
+.nav_item_hover .index {
+	text-shadow: 0 0 2px rgba(134, 194, 50, 0.8);
+	transition: text-shadow 0.3s ease-in-out;
 }
 @media (min-width: 64rem) {
 	.nav {
