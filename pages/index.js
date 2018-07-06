@@ -3,17 +3,10 @@ import $ from "./style.css";
 
 class Page extends Component {
 	state = {
-		data: null,
 		isSimpleVisible: false,
 		isComplexVisible: false,
 		isLoading: false,
 	};
-
-	componentDidMount() {
-		fetch("/static/data/home.json")
-			.then(reply => reply.json())
-			.then(data => this.setState({ data: data }));
-	}
 
 	clickLeft() {
 		const animations = document.querySelectorAll(".animate");
@@ -57,7 +50,7 @@ class Page extends Component {
 	}
 
 	render() {
-		const { data, isSimpleVisible, isComplexVisible } = this.state;
+		const { isSimpleVisible, isComplexVisible } = this.state;
 
 		return (
 			<b className={$.layout}>
@@ -68,12 +61,18 @@ class Page extends Component {
 						viewBox="0 0 100 100"
 						preserveAspectRatio="none"
 					>
-						<linearGradient id="grad_complex" gradientTransform="rotate(-45)">
+						<linearGradient
+							id="grad_complex"
+							gradientTransform="rotate(-45)"
+						>
 							<stop stopColor="#222629" offset="0%" />
 							<stop stopColor="#86c232" offset="60%" />
 						</linearGradient>
 
-						<linearGradient id="grad_simple" gradientTransform="rotate(135)">
+						<linearGradient
+							id="grad_simple"
+							gradientTransform="rotate(135)"
+						>
 							<stop stopColor="#ED7456" offset="0%" />
 							<stop stopColor="#EC547B" offset="20%" />
 						</linearGradient>

@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { STATIC } from "~/playground.js";
 import Logo from "./Logo";
 import IntroSection from "./IntroSection";
 import AboutSection from "./AboutSection";
@@ -17,8 +18,8 @@ class Simple extends Component {
 	};
 
 	componentDidMount() {
-		fetch("/static/data/home.json")
-			.then(reply => reply.json())
+		fetch(`${STATIC}/static/data/home.json`)
+			.then(response => response.json())
 			.then(response => {
 				this.setState({ data: response, isLoading: false });
 			});

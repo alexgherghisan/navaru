@@ -1,6 +1,5 @@
-import Head from "next/head";
 import { Component } from "react";
-import $ from "./style.css";
+import { STATIC } from "~/playground.js";
 import IntroSection from "./IntroSection";
 import Navigation from "./Navigation";
 import BeginningSection from "./BeginningSection";
@@ -10,18 +9,22 @@ import ClientsSection from "./ClientsSection";
 import PortfolioSection from "./PortfolioSection";
 import WebSection from "./WebSection";
 import FrontendSection from "./FrontendSection";
+import $ from "./style.css";
+
 class Complex extends Component {
 	state = {
 		data: null,
 		isLoading: true,
 	};
+
 	componentDidMount() {
-		fetch("/static/data/home.json")
+		fetch(`${STATIC}/static/data/home.json`)
 			.then(response => response.json())
 			.then(response => {
 				this.setState({ data: response, isLoading: false });
 			});
 	}
+
 	render() {
 		const { data, isLoading } = this.state;
 
