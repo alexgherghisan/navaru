@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Simple from "./Simple";
 import $ from "./style.css";
 
 class Page extends Component {
@@ -128,6 +129,7 @@ class Page extends Component {
 				<b className={isSimpleVisible ? $.simple : $.hidden}>
 					<b className={$.back} onClick={() => this.clickBack()}>
 						try complex one
+						{isSimpleVisible ? <Simple /> : null}
 					</b>
 				</b>
 				<b className={isComplexVisible ? $.complex : $.hidden}>
