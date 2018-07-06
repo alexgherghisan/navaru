@@ -4,7 +4,50 @@
 		"simple": "/static/logo/simple-logo.png",
 		"complex": "/static/logo/complex-logo.png"
 	},
+	"menu": [
+		{
+			"name": "Intro",
+			"image": "/static/images/complex-intro-section.jpg",
+			"ref": "intro"
+		},
+		{
+			"name": "Beginning",
+			"image": "/static/images/complex-beginning-section.jpg",
+			"ref": "beginning"
+		},
+		{
+			"name": "About",
+			"image": "/static/images/complex-about-section.jpg",
+			"ref": "about"
+		},
+		{
+			"name": "Services",
+			"image": "/static/images/complex-services-section.jpg",
+			"ref": "services"
+		},
+		{
+			"name": "Clients",
+			"image": "/static/images/complex-clients-section.jpg",
+			"ref": "clients"
+		},
+		{
+			"name": "Demos",
+			"image": "/static/images/complex-portfolio-section.jpg",
+			"ref": "demos"
+		},
+		{
+			"name": "Web",
+			"image": "/static/images/complex-web-section.jpg",
+			"ref": "web"
+		},
+		{
+			"name": "Frontend",
+			"image": "/static/images/complex-frontend-section.jpg",
+			"ref": "frontend"
+		}
+	],
 	"introSection": {
+		"ref": "intro",
 		"simple": {
 			"heading": "Simple is underrated.",
 			"image": "/static/images/simple-intro-section.jpeg"
@@ -12,61 +55,33 @@
 		"complex": {
 			"heading":
 				"Early adopters. Thinkers. Doers. Problem solvers. We have COMPLEX plans. Can you handle it?",
-			"image": "/static/images/complex-beginning-section.jpg",
+			"image": "/static/images/complex-intro-section.jpg",
 			"video": "/static/videos/complex-intro-section.webm"
 		}
 	},
+	"beginningSection": {
+		"ref": "beginning",
+		"heading": "Let's start at the beginning.",
+		"image": {
+			"simple": "/static/images/simple-beginning-section.jpeg",
+			"complex": "/static/images/complex-beginning-section.jpg"
+		},
+		"description":
+			"Every project is unique, but they all start with one thing in common. We want to know everything: where you started. Where you want to go next. What you value. Who your customers are and why they care about you. The only way to solve a problem is to understand it from every angle. Luckily, we’ve got a proven process to quench our insatiable curiosity."
+	},
 	"aboutSection": {
+		"ref": "about",
 		"heading": "We create things",
 		"subheading": "About us",
 		"description":
 			"We've come to understand that websites are not just about pretty pictures, more traffic, better keywords and higher rankings on Google. Those things are important, sure, but more than anything else, websites need to produce when it comes to the bottom line.",
 		"image": {
 			"simple": "/static/images/simple-about-section.jpg",
-			"complex": "/static/images/complex-beginning-section.jpg"
+			"complex": "/static/images/complex-about-section.jpg"
 		}
 	},
-	"portfolioSection": {
-		"heading": "Demos",
-		"items": [
-			{
-				"image": "/static/demos/plants.png",
-				"heading": "Plants",
-				"link": ""
-			},
-			{
-				"image": "/static/demos/architecture.png",
-				"heading": "Architecture",
-				"link": ""
-			},
-			{
-				"image": "/static/demos/calendar.png",
-				"heading": "Calendar",
-				"link": ""
-			},
-			{
-				"image": "/static/demos/books.png",
-				"heading": "Books",
-				"link": ""
-			},
-			{
-				"image": "/static/demos/structure.png",
-				"heading": "Structure components examples",
-				"link": ""
-			},
-			{
-				"image": "/static/demos/universe-facts.png",
-				"heading": "Universe facts",
-				"link": ""
-			},
-			{
-				"image": "/static/demos/react-wireframe.png",
-				"heading": "React Wireframe",
-				"link": ""
-			}
-		]
-	},
 	"servicesSection": {
+		"ref": "services",
 		"heading": "Services",
 		"image": "/static/images/complex-services-section.jpg",
 		"items": [
@@ -101,16 +116,8 @@
 			}
 		]
 	},
-	"beginningSection": {
-		"heading": "Let's start at the beginning.",
-		"image": {
-			"simple": "/static/images/simple-beginning-section.jpeg",
-			"complex": "/static/images/complex-about-section.jpg"
-		},
-		"description":
-			"Every project is unique, but they all start with one thing in common. We want to know everything: where you started. Where you want to go next. What you value. Who your customers are and why they care about you. The only way to solve a problem is to understand it from every angle. Luckily, we’ve got a proven process to quench our insatiable curiosity."
-	},
 	"clientsSection": {
+		"ref": "clients",
 		"heading": "Clients",
 		"image": {
 			"simple": "/static/images/simple-clients-section.jpeg",
@@ -119,7 +126,71 @@
 		"description":
 			"No challenge too big. No detail too small. Big picture vision meets serious detail-sweating at every point of a project."
 	},
+	"portfolioSection": {
+		"ref": "demos",
+		"heading": "Demos",
+		"image": "",
+		"items": [
+			{
+				"image": {
+					"simple": "/static/demos/simple-plants.png",
+					"complex": "/static/demos/complex-plants.png"
+				},
+				"heading": "Plants",
+				"link": ""
+			},
+			{
+				"image": {
+					"simple": "/static/demos/simple-architecture.png",
+					"complex": "/static/demos/complex-architecture.png"
+				},
+				"heading": "Architecture",
+				"link": ""
+			},
+			{
+				"image": {
+					"simple": "/static/demos/simple-calendar.png",
+					"complex": "/static/demos/complex-calendar.png"
+				},
+				"heading": "Calendar",
+				"link": ""
+			},
+			{
+				"image": {
+					"simple": "/static/demos/simple-books.png",
+					"complex": "/static/demos/complex-books.png"
+				},
+				"heading": "Books",
+				"link": ""
+			},
+			{
+				"image": {
+					"simple": "/static/demos/simple-structure.png",
+					"complex": "/static/demos/complex-structure.png"
+				},
+				"heading": "Structure components examples",
+				"link": ""
+			},
+			{
+				"image": {
+					"simple": "/static/demos/simple-universe-facts.png",
+					"complex": "/static/demos/complex-universe-facts.png"
+				},
+				"heading": "Universe facts",
+				"link": ""
+			},
+			{
+				"image": {
+					"simple": "/static/demos/simple-react-wireframe.png",
+					"complex": "/static/demos/complex-react-wireframe.png"
+				},
+				"heading": "React Wireframe",
+				"link": ""
+			}
+		]
+	},
 	"webSection": {
+		"ref": "web",
 		"heading": "Web development",
 		"image": {
 			"simple": "/static/images/simple-web-section.jpeg",
@@ -129,6 +200,7 @@
 			"The endless possibilities of the web is something we adopt continuously. Through a rock-solid stack of technology we provide our clients with fast, scalable products, built for the digital future."
 	},
 	"frontendSection": {
+		"ref": "frontend",
 		"heading": "Frontend development",
 		"image": {
 			"simple": "/static/images/simple-frontend-section.jpeg",

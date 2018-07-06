@@ -6,10 +6,6 @@
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
 }
-.heading {
-	composes: heading from "../defaults.css";
-	color: var(--background_accent);
-}
 .items {
 	display: flex;
 	flex-direction: row;

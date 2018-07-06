@@ -111,9 +111,10 @@
 @media (min-width: 64rem) {
 	.container {
 		justify-content: flex-end;
+		padding: 0 5rem 14rem;
 	}
 	.content {
-		padding: 5rem 0 0 5rem;
+		padding: 14rem 0 0 5rem;
 		flex-basis: 60%;
 		margin: 0;
 		width: auto;

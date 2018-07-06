@@ -30,37 +30,58 @@
 		"heading": "Demos",
 		"items": [
 			{
-				"image": "/static/demos/plants.png",
+				"image": {
+					"simple": "/static/demos/simple-plants.png",
+					"complex": "/static/demos/complex-plants.png"
+				},
 				"heading": "Plants",
 				"link": ""
 			},
 			{
-				"image": "/static/demos/architecture.png",
+				"image": {
+					"simple": "/static/demos/simple-architecture.png",
+					"complex": "/static/demos/complex-architecture.png"
+				},
 				"heading": "Architecture",
 				"link": ""
 			},
 			{
-				"image": "/static/demos/calendar.png",
+				"image": {
+					"simple": "/static/demos/simple-calendar.png",
+					"complex": "/static/demos/complex-calendar.png"
+				},
 				"heading": "Calendar",
 				"link": ""
 			},
 			{
-				"image": "/static/demos/books.png",
+				"image": {
+					"simple": "/static/demos/simple-books.png",
+					"complex": "/static/demos/complex-books.png"
+				},
 				"heading": "Books",
 				"link": ""
 			},
 			{
-				"image": "/static/demos/structure.png",
+				"image": {
+					"simple": "/static/demos/simple-structure.png",
+					"complex": "/static/demos/complex-structure.png"
+				},
 				"heading": "Structure components examples",
 				"link": ""
 			},
 			{
-				"image": "/static/demos/universe-facts.png",
+				"image": {
+					"simple": "/static/demos/simple-universe-facts.png",
+					"complex": "/static/demos/complex-universe-facts.png"
+				},
 				"heading": "Universe facts",
 				"link": ""
 			},
 			{
-				"image": "/static/demos/react-wireframe.png",
+				"image": {
+					"simple": "/static/demos/simple-react-wireframe.png",
+					"complex": "/static/demos/complex-react-wireframe.png"
+				},
 				"heading": "React Wireframe",
 				"link": ""
 			}

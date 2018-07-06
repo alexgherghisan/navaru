@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+	overflow: auto;
+}
+.item {
+	cursor: pointer;
+	padding: 1rem;
+	text-shadow: rgba(236, 84, 123, 0.7) 1px 1px 1px,
+		rgba(237, 116, 86, 0.7) -1px -1px 1px,
+		rgba(236, 84, 123, 0.7) 1px -1px 1px,
+		rgba(237, 116, 86, 0.7) -1px 1px 1px;
+	font-family: var(--font_accent);
+	font-weight: 500;
+	transition-property: text-shadow;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+.item_active {
+	composes: item;
+	text-shadow: rgba(236, 84, 123, 1) 2px 2px 2px,
+		rgba(237, 116, 86, 1) -2px -2px 2px, rgba(236, 84, 123, 1) 2px -2px 2px,
+		rgba(237, 116, 86, 1) -2px 2px 2px;
+}
