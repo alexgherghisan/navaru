@@ -1,35 +1,61 @@
 import { Component } from "react";
+import { STATIC } from "~/playground.js";
+import Simple from "./Simple";
 import $ from "./style.css";
 
 class Page extends Component {
 	state = {
+		data: null,
 		isSimpleVisible: false,
 		isComplexVisible: false,
 		isLoading: false,
 	};
 
-	clickLeft() {
+	componentDidMount() {
+		fetch(`${STATIC}/data/home.json`)
+			.then(response => response.json())
+			.then(response => {
+				this.setState({
+					data: response,
+					isLoading: false,
+				});
+			});
+	}
+
+	animate() {
 		const animations = document.querySelectorAll(".animate");
 		for (const animation of animations) {
 			animation.beginElement();
 		}
+	}
+
+	animateBack() {
+		const animations = document.querySelectorAll(".animate_back");
+		for (const animation of animations) {
+			animation.beginElement();
+		}
+	}
+
+	clickLeft() {
+		this.animate();
 
 		this.setState({ isSimpleVisible: true, isComplexVisible: false });
 	}
+
 	clickRight() {
-		const animations = document.querySelectorAll(".animate");
-		for (const animation of animations) {
-			animation.beginElement();
-		}
+		this.animate();
 
 		this.setState({ isSimpleVisible: false, isComplexVisible: true });
 	}
 
 	clickBack() {
-		const animations = document.querySelectorAll(".animate_back");
-		for (const animation of animations) {
-			animation.beginElement();
-		}
+		this.animateBack();
+
+		this.setState({ isSimpleVisible: false, isComplexVisible: false });
+	}
+
+	clickToSwitch() {
+		this.animateBack();
 
 		const isSimpleVisible = this.state.isSimpleVisible;
 		const isComplexVisible = this.state.isComplexVisible;
@@ -37,10 +63,7 @@ class Page extends Component {
 		this.setState({ isSimpleVisible: false, isComplexVisible: false });
 
 		setTimeout(() => {
-			const animations = document.querySelectorAll(".animate");
-			for (const animation of animations) {
-				animation.beginElement();
-			}
+			this.animate();
 
 			this.setState({
 				isSimpleVisible: !isSimpleVisible,
@@ -50,10 +73,21 @@ class Page extends Component {
 	}
 
 	render() {
-		const { isSimpleVisible, isComplexVisible } = this.state;
+		const {
+			data,
+			isLoading,
+			isSimpleVisible,
+			isComplexVisible,
+		} = this.state;
 
 		return (
-			<b className={$.layout}>
+			<b
+				className={
+					isSimpleVisible || isComplexVisible
+						? $.layout_screen
+						: $.layout
+				}
+			>
 				<b className={$.container}>
 					<svg
 						width="100%"
@@ -126,13 +160,25 @@ class Page extends Component {
 					</svg>
 				</b>
 				<b className={isSimpleVisible ? $.simple : $.hidden}>
-					<b className={$.back} onClick={() => this.clickBack()}>
-						try complex one
+					<b
+						className={$.back_simple}
+						onClick={() => this.clickToSwitch()}
+					>
+						see complex
 					</b>
+					{isSimpleVisible ? (
+						<Simple
+							data={data}
+							onClickBack={() => this.clickBack()}
+						/>
+					) : null}
 				</b>
 				<b className={isComplexVisible ? $.complex : $.hidden}>
-					<b className={$.back} onClick={() => this.clickBack()}>
-						try simple one
+					<b
+						className={$.back_complex}
+						onClick={() => this.clickToSwitch()}
+					>
+						see simple
 					</b>
 				</b>
 			</b>

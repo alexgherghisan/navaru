@@ -4,7 +4,12 @@
 	width: 100vw;
 	overflow: hidden;
 }
-.container {
+.layout_screen {
+	composes: layout;
+	height: auto;
+	overflow: auto;
+}
+.layout .container {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -31,7 +36,23 @@
 	height: 100%;
 }
 .back {
-	color: #fff;
+	padding: 1rem;
+	z-index: 30;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	font-weight: bold;
+}
+.back_simple {
+	composes: back;
+	color: green;
+}
+.back_complex {
+	composes: back;
+	color: #ec547b;
+	background: linear-gradient(to right, #ed7456, #ec547b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .hidden {
 	position: relative;
@@ -51,13 +72,19 @@
 }
 .simple {
 	composes: hidden;
-	color: red;
 	opacity: 1;
 	z-index: 10;
+	position: relative;
+	top: auto;
+	bottom: auto;
+	height: auto;
 }
 .complex {
 	composes: hidden;
-	color: yellow;
 	opacity: 1;
 	z-index: 10;
+	position: relative;
+	top: auto;
+	bottom: auto;
+	height: auto;
 }
