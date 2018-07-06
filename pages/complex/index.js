@@ -18,7 +18,7 @@ class Complex extends Component {
 	};
 
 	componentDidMount() {
-		fetch(`${STATIC}/static/data/home.json`)
+		fetch(`${STATIC}/data/home.json`)
 			.then(response => response.json())
 			.then(response => {
 				this.setState({ data: response, isLoading: false });
