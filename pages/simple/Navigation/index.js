@@ -8,6 +8,7 @@ class Navigation extends Component {
 		items: null,
 		activeIndex: null,
 		hoverIndex: null,
+		isMenuOpened: false,
 	};
 
 	componentDidMount() {
