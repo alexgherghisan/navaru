@@ -2,7 +2,6 @@ import $ from "./style.css";
 
 export default ({ heading, items }) => (
 	<b className={$.container}>
-		<i className={$.heading}>{heading}</i>
 		<b className={$.items}>
 			{items.map((item, key) => (
 				<b className={$.item} key={key}>

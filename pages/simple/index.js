@@ -37,6 +37,13 @@ class Simple extends Component {
 						heading={data.introSection.simple.heading}
 					/>
 				</b>
+				<b className={$.beginning_section}>
+					<BeginningSection
+						heading={data.beginningSection.heading}
+						description={data.beginningSection.description}
+						image={data.beginningSection.image.simple}
+					/>
+				</b>
 				<b className={$.about_section}>
 					<AboutSection
 						heading={data.aboutSection.heading}
@@ -45,14 +52,8 @@ class Simple extends Component {
 						image={data.aboutSection.image.simple}
 					/>
 				</b>
-				<b className={$.beginning_section}>
-					<BeginningSection
-						heading={data.beginningSection.heading}
-						description={data.beginningSection.description}
-						image={data.beginningSection.image.simple}
-					/>
-				</b>
 				<b className={$.services_section}>
+					<b className={$.gradient} />
 					<ServicesSection
 						heading={data.servicesSection.heading}
 						items={data.servicesSection.items}

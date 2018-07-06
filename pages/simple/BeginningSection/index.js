@@ -10,9 +10,11 @@ export default ({ heading, image, description }) => (
 			</b>
 		</b>
 		<b className={$.preview}>
-			<b className={$.image} style={{ backgroundImage: `url(${image})` }}>
-				<b className={$.gradient} />
-			</b>
+			<b
+				className={$.image}
+				style={{ backgroundImage: `url(${image})` }}
+			/>
+			<b className={$.gradient} />
 		</b>
 	</b>
 );
