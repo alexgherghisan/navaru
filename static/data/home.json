@@ -12,37 +12,37 @@
 		},
 		{
 			"name": "Beginning",
-			"image": "/static/images/complex-beginning-section.jpg",
+			"image": "/static/images/complex-beginning-section.jpeg",
 			"ref": "beginning"
 		},
 		{
 			"name": "About",
-			"image": "/static/images/complex-about-section.jpg",
+			"image": "/static/images/complex-about-section.jpeg",
 			"ref": "about"
 		},
 		{
 			"name": "Services",
-			"image": "/static/images/complex-services-section.jpg",
+			"image": "/static/images/complex-services-section.jpeg",
 			"ref": "services"
 		},
 		{
 			"name": "Clients",
-			"image": "/static/images/complex-clients-section.jpg",
+			"image": "/static/images/complex-clients-section.jpeg",
 			"ref": "clients"
 		},
 		{
 			"name": "Demos",
-			"image": "/static/images/complex-portfolio-section.jpg",
+			"image": "/static/images/complex-portfolio-section.jpeg",
 			"ref": "demos"
 		},
 		{
 			"name": "Web",
-			"image": "/static/images/complex-web-section.jpg",
+			"image": "/static/images/complex-web-section.jpeg",
 			"ref": "web"
 		},
 		{
 			"name": "Frontend",
-			"image": "/static/images/complex-frontend-section.jpg",
+			"image": "/static/images/complex-frontend-section.jpeg",
 			"ref": "frontend"
 		}
 	],
