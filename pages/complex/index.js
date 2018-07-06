@@ -70,7 +70,10 @@ class Complex extends Component {
 					/>
 				</b>
 				<b className={$.Portfolio_section}>
-					<PortfolioSection items={data.portfolioSection.items} />
+					<PortfolioSection
+						heading={data.portfolioSection.heading}
+						items={data.portfolioSection.items}
+					/>
 				</b>
 				<b className={$.Web_section}>
 					<WebSection

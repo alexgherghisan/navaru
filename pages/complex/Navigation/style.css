@@ -36,6 +36,8 @@
 	text-transform: uppercase;
 	z-index: 2;
 	composes: description from "../style.css";
+	font-weight: bold;
+	letter-spacing: 0.1rem;
 }
 .index {
 	position: absolute;
