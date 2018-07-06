@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,700");
 .application {
 	composes: root from "./defaults.css";
-	height: 100vh;
-	overflow-y: auto;
 }
 .container {
 	position: relative;

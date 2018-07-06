@@ -81,7 +81,13 @@ class Page extends Component {
 		} = this.state;
 
 		return (
-			<b className={$.layout}>
+			<b
+				className={
+					isSimpleVisible || isComplexVisible
+						? $.layout_screen
+						: $.layout
+				}
+			>
 				<b className={$.container}>
 					<svg
 						width="100%"

@@ -4,7 +4,12 @@
 	width: 100vw;
 	overflow: hidden;
 }
-.container {
+.layout_screen {
+	composes: layout;
+	height: auto;
+	overflow: auto;
+}
+.layout .container {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -67,13 +72,19 @@
 }
 .simple {
 	composes: hidden;
-	color: red;
 	opacity: 1;
 	z-index: 10;
+	position: relative;
+	top: auto;
+	bottom: auto;
+	height: auto;
 }
 .complex {
 	composes: hidden;
-	color: yellow;
 	opacity: 1;
 	z-index: 10;
+	position: relative;
+	top: auto;
+	bottom: auto;
+	height: auto;
 }
